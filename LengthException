@@ -1,0 +1,14 @@
+/**
+ * Exception class used to represent whenever a password is too short 
+ * @author Paul Abili
+ */
+public class LengthException extends RuntimeException {
+	
+	public LengthException() {
+		this("The password must be at least 6 characters long");
+	}
+	
+	public LengthException(String message) {
+		super(message);
+	}
+}
