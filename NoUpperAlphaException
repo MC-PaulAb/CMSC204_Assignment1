@@ -1,0 +1,15 @@
+/**
+ * Exception class used to represent whenever a password is does not have an uppercase character
+ * @author Paul Abili
+ */
+public class NoUpperAlphaException extends RuntimeException{
+	
+	public NoUpperAlphaException() {
+		this("The password must contain at least one uppercase alphabetic character");
+	}
+	
+	public NoUpperAlphaException(String message) {
+		super(message);
+	}
+
+}
