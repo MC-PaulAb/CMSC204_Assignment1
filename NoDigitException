@@ -1,0 +1,15 @@
+/**
+ * Exception class used to represent whenever a password does not have a digit 
+ * @author Paul Abili
+ */
+public class NoDigitException extends RuntimeException{
+	
+	public NoDigitException() {
+		this("The password must contain at least one digit");
+	}
+	
+	public NoDigitException(String message) {
+		super(message);
+	}
+
+}
